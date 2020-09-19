@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=none, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS
+    ====================== -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Font Awesome 
+    ==============================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Estilos Personalizados 
+    ==================================-->
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <!-- Ícono en la Pestaña del navegador 
+    ==========================================-->
+    <link rel="shortcut icon" href="../img/logo_pestaña.ico" type="image/x-icon">
+
+    <title>Confecciones Moncleys</title>
+</head>
+<body>
+
+<!-- =====Sticky Navigation Bar On Scroll Using Vanilla Javascript | Fixed Navbar on Scroll | Online Tutorials==== -->
+
+<header>
+    <a href="../index.html" class="logo">Moncleys</a>
+    <ul>
+        <li><a href="../html/nosotros.html">Nosotros</a></li>
+        <li><a href="../html/servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</header>
+
+<section class="banner"></section>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+})
+</script>
+
+
+
+
+
+<!----Formulario de Contacto- Fuente: Online Tutorials -->
+
+<div class="contact-form">
+    <div class="container">
+        <div class="contactinfo">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Perú, Lima- Atte</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <span>confeccionesmoncleys<br>@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>942312020</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/ysmael.salasmonteza.9/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/monteza_12"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/ysmaelsalasmonteza/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://youtu.be/KSy_UEjRamk"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+        </div>
+
+        <form method="post" action="email.php">
+        <div class="contactForm">
+            <h2>Enviar Mensaje</h2>
+            <div class="formBox">
+                <div class="inputBox w50">
+                    <input type="text" name="nombre" required="">
+                    <span>Nombre</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" name="apellido" required="">
+                    <span>Apellido</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="email" name="email" required="">
+                    <span>Dirección de Correo</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="number" name="telefono" required="">
+                    <span>Número de Teléfono</span>
+                </div>
+                <div class="inputBox w100">
+                    <textarea name="mensaje" required=""></textarea>
+                    <span>Escribe tu mensaje aqui...</span>
+                </div>
+                <div class="inputBox w100">
+                    <input type="submit" name="enviar" />
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+
+
+
+
+<!-- ========How To Make 3D Flip Effect In HTML and CSS | Create Flip Card In HTML CSS Step by Step | Easy Tutorials===== -->
+<div class="container-delivery">
+    <h1>Información Delivery</h1>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="inner-box">
+                    <div class="card-front front-1">
+                        <span>Email</span>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Contáctanos a traves de Email</strong> <br> emontezadavila@gmail.com</p> 
+                        <div class="social-media">
+                            <a><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="inner-box">
+                    <div class="card-front front-2">
+                        <span>Teléfono</span>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Contáctanos por medio de WhatsApp</strong> <br> 979904313</p> 
+                        <div class="social-media">
+                            <a><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="inner-box">
+                    <div class="card-front front-3">
+                        <span>Envios</span>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Los envios son a nivel local</strong> <br> Pedido a traves de correo</p> 
+                        <div class="social-media">
+                            <a><i class="fa fa-truck"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- =========================Fully Responsive Footer Section using HTML CSS | CodingNepal=================================== -->
+  <footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>About Us</h2>
+            <div class="content">
+                <p>
+                    Nosotros somos una tienda de ropa que se dedica a ofrecerte prendas de vestir para damas, 
+                    caballeros y niños a tu estilo propio. Visitanos y se parte de este cambio de moda que tenemos
+                    únicamente para tí.
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/ysmael.salasmonteza.9/"><span class="fa fa-facebook"></span></a>
+                    <a href="https://twitter.com/monteza_12"><span class="fa fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/ysmaelsalasmonteza/"><span class="fa fa-instagram"></span></a>
+                    <a href="https://youtu.be/KSy_UEjRamk"><span class="fa fa-youtube-play"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="center box">
+            <h2>Direcciones</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fa fa-map-marker"></span>
+                    <span class="text">Perú, Lima-Atte</span>
+                </div>
+                <div class="phone">
+                    <span class="fa fa-phone"></span>
+                    <span class="text">(+51) 942312020</span>
+                </div>
+                <div class="email">
+                    <span class="fa fa-envelope"></span>
+                    <span class="text">confeccionesmoncleys@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>Contáctanos</h2>
+            <div class="content">
+                <form method="post" action="email.php">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Mensaje *</div>
+                        <textarea cols="25" rows="2" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <center>
+            <span class="fa fa-copyright"></span><span class="credit">Todos los Derechos Reservados <a href="#">Moncleys</a>|</span>
+            </span><span>2020</span>
+        </center>
+    </div>
+</footer> 
+
+
+<!-- ================================================================================== -->
+
+</body>
+</html>

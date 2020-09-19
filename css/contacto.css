@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,400;1,700&display=swap');
+
+/*  font-family: 'Russo One', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;*/
+
+/* ================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* =====Sticky Navigation Bar On Scroll Using Vanilla Javascript | Fixed Navbar on Scroll | Online Tutorials==== */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000000;
+}
+
+header.sticky{
+    padding: 6px 100px;
+    background: #fff;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    /* ======= */
+    font-family: 'Russo One', sans-serif;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+    /* ============ */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    top: 6px;
+    padding: 4px 8px;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+
+/* =========================================== */
+
+header ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+header.sticky ul li a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/banner-1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+/*----Contac Info----*/
+
+.contact-form
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #112d42;
+    font-family: 'Poppins', cursive;
+    height: 100vh;
+}
+
+.contact-form::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.contact-form .container
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 500px;
+    display: flex;
+    z-index: 100;
+}
+
+.contact-form .container .contactinfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .container .contactinfo h2
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact-form .container .contactinfo .info
+{
+    position: relative;
+    margin: 20px 0;
+}
+
+.contact-form .container .contactinfo .info li
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.contact-form .container .contactinfo .info li span i.fa{
+    color: #fff;
+}
+
+.contact-form .container .contactinfo .info li span:nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+.contact-form .container .contactinfo .info li span:nth-child(1) .fa
+{
+    max-width: 100%;
+    opacity: 0.5;
+}
+
+.contact-form .container .contactinfo .info li span:nth-child(2)
+{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.contact-form .container .contactinfo .info li:hover span:nth-child(1) .fa,
+.contact-form .container .contactinfo .info li:hover span:nth-child(2)
+{
+    opacity: 1;
+}
+
+.contact-form .container .contactinfo .sci
+{
+    position: relative;
+    display: flex;
+}
+
+
+.contact-form .container .contactinfo .sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.contact-form .container .contactinfo .sci li a
+{
+    text-decoration: none;
+}
+
+.contact-form .container .contactinfo .sci li a .fa
+{
+    opacity: 0.5;
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact-form .container .contactinfo .sci li:hover a .fa
+{
+    opacity: 1;
+}
+
+.contact-form .container .contactForm
+{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    margin-top: 20px;
+    color: #000;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form .container .contactForm h2
+{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins', cursive;
+}
+
+.contact-form .container .contactForm .formBox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contact-form .container .contactForm .formBox .inputBox
+{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+
+.contact-form .container .contactForm .formBox .inputBox.w50
+{
+    width: 47%;
+}
+
+.contact-form .container .contactForm .formBox .inputBox.w100
+{
+    width: 100%;
+}
+
+.contact-form .container .contactForm .formBox .inputBox input,
+
+.contact-form .container .contactForm .formBox .inputBox textarea
+{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.contact-form .container .contactForm .formBox .inputBox textarea
+{
+    min-height: 120px;
+}
+
+.contact-form .container .contactForm .formBox .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.contact-form .container .contactForm .formBox .inputBox input:focus ~ span,
+.contact-form .container .contactForm .formBox .inputBox textarea:focus ~ span,
+.contact-form .container .contactForm .formBox .inputBox input:valid ~ span,
+.contact-form .container .contactForm .formBox .inputBox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400px;
+    letter-spacing: 1px;
+    color: #ff568f;
+}
+
+
+.contact-form .container .contactForm .formBox .inputBox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    transition: 0.2s;
+}
+
+
+.contact-form .container .contactForm .formBox .inputBox input[type="submit"]:hover
+{
+    background: #075fa1;
+    color: #222020;
+}
+
+
+
+
+/* ========How To Make 3D Flip Effect In HTML and CSS | Create Flip Card In HTML CSS Step by Step | Easy Tutorials===== */
+.container-delivery{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.container-delivery h1{
+    color: #000;
+    text-align: center;
+    margin: 100px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-delivery .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-delivery .row .col{
+    flex-basis: 30%;
+    overflow: hidden;
+}
+
+.container-delivery .row .col .card{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    perspective: 1000px;
+    cursor: pointer;
+    border: none;
+}
+
+.container-delivery .row .col .card .inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* border-radius: 10px; */
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.container-delivery .row .col .card .inner-box .card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container-delivery .row .col .card .inner-box .card-front{
+    background-position: center;
+    background-size: cover;
+}
+
+.front-1{
+    background-image: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.5)), url(../img/img-5.jpg);
+}
+.front-2{
+    background-image: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.5)), url(../img/img-7.jpg);
+}
+.front-3{
+    background-image: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.5)), url(../img/img-8.jpg);
+}
+
+.container-delivery .row .col .card .inner-box .card-front span{
+    display: inline-block;
+    width: 100px;
+    padding: 14px 0;
+    margin-top: 160px;
+   /*  border-radius: 4px; */
+    background: #fff;
+    color: #333;
+    transition: transform 1s;
+}
+
+.card-back{
+    background: #1B9CFC;
+    transform: rotateX(180deg);
+}
+
+.card:hover .inner-box{
+    transform: rotateX(-180deg);
+}
+
+.card:hover span{
+    transform: translateY(140px);
+}
+
+.card-back p{
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    margin-top: 140px;
+}
+
+.container-delivery .social-media{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 38%;
+    margin-top: 20px;
+}
+
+.container-delivery .social-media .fa{
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 90px;
+}
+
+.container-delivery .social-media .fa.fa-whatsapp{
+    text-decoration: none;
+    list-style: none;
+    font-size: 60px;
+}
+
+
+
+
+/* ========Fully Responsive Footer Section using HTML CSS | CodingNepal======= */
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    color: #d9d9d9;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content{
+    margin: 20px 0 0 0;
+}
+
+/* .box .content::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+} */
+
+.box .content p{
+    text-align: justify;
+    /* ================ */
+    background-color: #111;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+/* =======Fuente Propia===== */
+.left .content, .center .content, .right .content{
+    background-color: #111;
+}
+
+.left .content .social a{
+    padding: 0 2px;
+    /* ============ */
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover{
+    background: #f12020;
+}
+
+/* ===Fuente propia== */
+.center .content{
+    margin: 0;
+    display: inline;
+}
+.center .content .place{
+    margin-top: 15px 0 0 0;
+}
+
+.center .content .fa{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fa:hover{
+    background: #f12020;    
+}
+
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 10px 0;
+}
+
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form{
+    display: inline;
+    margin-left: -170px;
+    /* =========== */
+}
+
+.right form input,
+.right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222;
+    color: #d9d9d9;
+    resize: none;
+}
+
+/* .right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+} */
+
+.right form input{
+    height: 35px;
+}
+
+.right form .btn{
+    margin-top: 10px;
+}
+
+.right form .btn button{
+    height: 40px;
+    width: 300%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    color: #d9d9d9;
+}
+
+.right form .btn button:hover{
+    background: #000;
+}
+
+.right form .btn button:active{
+    transform: scale(0.8);
+}
+
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span{
+    color: #656565;
+}
+
+.bottom center a{
+    color: #f12020;
+    text-decoration: none;
+}
+
+.bottom center a:hover{
+    text-decoration: underline;
+}

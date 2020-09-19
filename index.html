@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=none, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS
+    ====================== -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- Font Awesome 
+    ==============================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Lightbox CSS 
+    =============================================-->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+
+    <!-- Estilos Personalizados 
+    ==================================-->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- Ícono en la Pestaña del navegador 
+    ==========================================-->
+    <link rel="shortcut icon" href="./img/logo_pestaña.ico" type="image/x-icon">
+
+    <title>Confecciones Moncleys</title>
+</head>
+<body>
+
+<!-- =====Sticky Navigation Bar On Scroll Using Vanilla Javascript | Fixed Navbar on Scroll | Online Tutorials==== -->
+
+    <header>
+        <a href="index.html" class="logo">Moncleys</a>
+        <ul>
+            <li><a href="./html/nosotros.html">Nosotros</a></li>
+            <li><a href="./html/servicios.html">Servicios</a></li>
+            <li><a href="./html/contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+
+
+
+<!-- ======Slider with Automatic and Manual Controls | Html Css Javascript | The WebShala===== -->
+
+    <section class="home">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('./img/img-7.jpg')">
+                <div class="container-slide">
+                    <div class="caption">
+                        <h1>Busca tu Estilo</h1>
+                        <p>Visita nuestra tienda y descubre nuestros Productos que tenemos para ti</p>
+                        <a href="./html/servicios.html">Ver Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./img/img-10.jpg')">
+                <div class="container-slide">
+                    <div class="caption">
+                        <h1>Informate más de quienes somos</h1>
+                        <p>Conócenos más!! Que esperas para visitarnos y tener mas conocimineto de nuestros productos.</p>
+                        <a href="./html/nosotros.html">Ver Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./img/img-9.jpg')">
+                <div class="container-slide">
+                    <div class="caption">
+                        <h1>Ponte en contacto con nosotros!</h1>
+                        <p>Vista nuestras Redes Sociales y ponte en comunicación con nosotrospara poder descubrir aún más.</p>
+                        <a href="#">Ver Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+            <div class="prev"><i class="fa fa-arrow-left"></i></div>
+            <div class="next"><i class="fa fa-arrow-right"></i></div>
+        </div>
+
+        <!-- indicadores -->
+        <div class="indicator"></div>
+    </section>
+
+
+<!-- =================Responsive About Us Page Using HTML & CSS | GeekProbin=============== -->
+    <section class="about">
+        <div class="image">
+
+        </div>
+        <div class="content">
+            <h2>Acerca de</h2>
+            <span></span>
+            <p>
+                Nosotros somos una tienda de ropa que se dedica a ofrecerte prendas de vestir para damas, caballeros y niños a tu estilo propio.
+            </p>
+            <ul class="links">
+                <li><a href="./html/nosotros.html">Nosotros</a></li>
+                <div class="vertical-line"></div>
+                <li><a href="./html/servicios.html">Servicios</a></li>
+                <div class="vertical-line"></div>
+                <li><a href="./html/contacto.html">Contáctanos</a></li>
+            </ul>
+
+            <ul class="icons">
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-youtube-play"></i></li>
+            </ul>
+        </div>
+    </section>
+
+
+<!-- ===========How To Make Image Gallery | Image Portfolio In HTML CSS JS Lightbox | Easy Tutorials======== -->
+    <div class="container text-center">
+        <h1>Nuestra Galería</h1>
+        <p>Te presentamos nuestra galería de nuestra empresa y de los productos que tenemos para tí.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="./img/prod/pro-9.jpg" data-lightbox="portfolio"><img src="./img/prod/pro-9.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="./img/prod/pro-10.jpg" data-lightbox="portfolio"><img src="./img/prod/pro-10.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="./img/prod/pro-15.jpg" data-lightbox="portfolio"><img src="./img/prod/pro-15.jpg" class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- =========================Fully Responsive Footer Section using HTML CSS | CodingNepal=================================== -->
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>Acerca de</h2>
+                <div class="content">
+                    <p>
+                        Nosotros somos una tienda de ropa que se dedica a ofrecerte prendas de vestir para damas, 
+                        caballeros y niños a tu estilo propio. Visitanos y se parte de este cambio de moda que tenemos
+                        únicamente para tí.
+                    </p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/ysmael.salasmonteza.9/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/monteza_12"><span class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/ysmaelsalasmonteza/"><span class="fa fa-instagram"></span></a>
+                        <a href="https://youtu.be/KSy_UEjRamk"><span class="fa fa-youtube-play"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Direcciones</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fa fa-map-marker"></span>
+                        <span class="text">Perú, Lima-Atte</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fa fa-phone"></span>
+                        <span class="text">(+51) 942312020</span>
+                    </div>
+                    <div class="email">
+                        <span class="fa fa-envelope"></span>
+                        <span class="text">confeccionesmoncleys@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contacto</h2>
+                <div class="content">
+                    <form method="post" action="./html/email.php">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Mensaje *</div>
+                            <textarea cols="25" rows="2" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="fa fa-copyright"></span><span class="credit">Todos los Derechos Reservados <a href="#">Moncleys</a>|</span>
+                </span><span>2020</span>
+            </center>
+        </div>
+    </footer>
+
+
+
+
+
+
+<!-- ================================================================================== -->
+
+    <!-- JQuery
+    ===================== -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <!-- Popper 
+    =======================-->
+    <script src="./js/popper.min.js"></script>
+
+    <!-- Bootstrap JS
+    ====================== -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Lightbox JS 
+    ==========================================-->
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- JS Personal 
+    =======================================-->
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
